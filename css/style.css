@@ -1,0 +1,110 @@
+*{
+  margin:0;
+  padding:0;
+}
+/*  resets default padding usually on headers that come with some tags*/
+
+body{
+  margin:0; /*zeros margin for everything in the body*/
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  ff:a;
+  /*  change emmit to use ff:a*/
+  font-size:17px;
+  color:#926239;
+  /* text color about  */
+  line-height:1.6;
+  /* spacing in between the lines */
+}
+
+#showcase{
+  background-image:url('../img/beachs.jpg');
+  /* url link to the image in img folder */
+  background-size:cover;
+  background-position:center;
+  /* centers photo no matter the size of window */
+  height:100vh;
+  /* new concept of viewport height, meaning everything within the window height wise
+  also a viewport width used as VH*/
+  display:flex;
+  /* new concept of flex, makes this a flex container, takes all content and aligns them horizontally by default flex row but we want to change to a column */
+  flex-direction:column;
+  /* this fixes above problem */
+  justify-content:center;
+  /* this will center the flex grid down to the middle from up and down */
+  align-items:center;
+  /*  side to side alignment*/
+  text-align:center;
+  /* centers the text within the block level */
+  padding:0 20px;
+  /* space when really small for the sides, none on the top and bottom */
+}
+
+#showcase h1{
+  font-size:50px;
+  /* size of letters in Welcome to the beach */
+  line-height:1.2;
+}
+
+#showcase p{
+  font-size:20px;
+  /* font size on the paragraph text below the h1 welcome to the beach */
+}
+
+#showcase .button{
+  font-size:18px;
+  /* within button */
+  text-decoration:none;
+  /* removes underline for link */
+  color:#926239;
+  /* color of text */
+  border:#926239 1px solid;
+  /* color of border, how thick and type */
+  padding:10px 20px;
+  /* padding within the border between letters format is top/sides*/
+  border-radius:10px;
+  /* how rounded the corners are */
+  margin-top:20px;
+  /* pushes button away from text as block level */
+}
+
+#showcase .button:hover{
+  background:#926239;
+  /* turns hover over background within the border and outside text to #926239*/
+  color:#fff;
+  /* color of the text for hover over */
+}
+
+#section-a{
+  padding:20px;
+  /* basically makes a paragraph within border */
+  background:#926239;
+  color:#fff;
+  /* text color */
+  text-align:center;
+  /* centers within border */
+}
+
+#section-b{
+  padding:20px;
+  background:#f4f4f4;
+  text-align:center;
+}
+
+#section-c{
+  display:flex;
+  /* will auto align horizontally and divide 12 boxes into how many content items */
+}
+
+#section-c div{
+  padding:20px;
+}
+
+#section-c .box-1, #section-c .box-3{
+    /* dual selector style  */
+  background:#926239;
+  color:#fff;
+}
+
+#section-c .box-2{
+  background:#f9f9f9;
+}
